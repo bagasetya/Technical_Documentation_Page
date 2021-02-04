@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  display: flex;
+  font-family: "Karla", sans-serif;
+}
+
+#navbar {
+  position: fixed;
+  width: 25%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  /*   max-width: 25%; */
+  display: flex;
+  flex-direction: column;
+  background-color: #dedede;
+  padding: 1.5em;
+  overflow-y: auto;
+}
+
+#navbar header {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.nav-link {
+  text-decoration: none;
+  padding: 1em;
+  transition: all 0.3s;
+  font-size: 1.2rem;
+  color: black;
+  /*   border-top: 1px solid black; */
+}
+
+.nav-link:hover {
+  border-left: 4px solid orangered;
+}
+
+/* Main Block */
+
+#main-doc {
+  margin-left: 30%;
+  width: 70%;
+  letter-spacing: 1px;
+}
+
+.main-section {
+  padding: 1.5em;
+}
+
+.main-section header {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+pre {
+  margin: 0;
+}
+
+code {
+  color: #4fbf40;
+  padding: 1.2em 1em;
+  background-color: black;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+}
+
+@media (max-width: 600px) {
+  body {
+    flex-direction: column;
+  }
+
+  #navbar {
+    position: relative;
+    width: 100%;
+  }
+
+  .nav-link {
+    font-size: 1 rem;
+  }
+
+  #main-doc {
+    width: 100%;
+    margin-left: 0;
+  }
+}
